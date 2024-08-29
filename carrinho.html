@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="Script JS/script.js"></script>
+  <link rel="icon" href="Images/mclaren-icon.png">
+  <title>Meu carrinho</title>
+</head>
+
+<body>
+
+  <section>
+    <h1>Carrinho de Compras</h1>
+    <a href="index.html"><button>Voltar ao site</button></a>
+    <button onclick="remover()" class="add-cart">Remover do carrinho</button>
+
+    <label for="lista-carrinho" class="content">
+      <ol id="lista-carrinho" class="list"></ol>
+    </label>
+    <label for="preco">
+      <ol id="preco"></ol>
+    </label>
+    <label for="preco-total"></label>
+    <script>
+      carregarCarrinho();
+    </script>
+
+</body>
+
+</html>

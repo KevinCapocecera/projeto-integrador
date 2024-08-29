@@ -1,0 +1,99 @@
+@media screen and (min-width: 1098px) {
+  body {
+    /* Exibir corpo como flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding-left: 20px;
+    width: 80%;
+  }
+
+  .container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: #bebebe;
+    border-radius: 15px;
+    color: black;
+
+    font-weight: 600;
+    font-size: large;
+  }
+
+  .bone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    height: 394px;
+    margin-top: 45px;
+
+    background-color: #ddd;
+    border-radius: 15px;
+
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+  }
+
+  #bone-img {
+    width: 311px;
+    height: 270px;
+  }
+
+  #moletom-img
+    #camiseta-laranja-img
+    #moletom-laranja-img
+    #jaqueta-img
+    #touca-img
+    #gorro-img {
+    width: 286px;
+    height: 296px;
+  }
+
+  .produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 45px;
+  }
+
+  /* CONFIGURAÇÃO DOS BOTÕES VOLTAR */
+  .back-icon {
+    width: 45px;
+    height: auto;
+  }
+
+  .voltar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  /* CONFIGURAÇÃO DO BOTÃO COM HOVER */
+  .voltar:hover {
+    background-color: #ff8c00;
+    transform: scale(0.8);
+  }
+}
