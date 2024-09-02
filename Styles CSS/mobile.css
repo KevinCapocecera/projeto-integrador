@@ -82,11 +82,13 @@ header {
 /* Container do dropdown */
 .dropdown {
   /* Posicionar dropdown como relativo */
-  position: relative;
+  position: absolute;
+  top: 2%;
+  left: 1%;
   display: inline-block;
 }
 
-/* Conteúdo do dropdown (oculto por padrão) */
+/* Conteúdo do dropdown (oculto por padrão)*/
 .dropdown-content {
   /* Ocultar conteúdo do dropdown */
   display: none;
