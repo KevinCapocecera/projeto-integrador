@@ -74,9 +74,9 @@
   /*CONFIGURAÇÃO DA BARRA DE BUSCA*/
   #divBusca {
     position: absolute;
-    margin-top: -3%;
+    margin-top: -1%;
     display: flex;
-    right: 0.1%;
+    right: -1%;
     background-color: #ffffff;
     border: solid 2px #ff8c00;
     border-radius: 10px;

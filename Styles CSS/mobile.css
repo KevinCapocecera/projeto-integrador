@@ -160,6 +160,10 @@ nav {
   font-size: medium;
 }
 
+#divBusca img {
+  float: left;
+}
+
 h3 {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 400;
@@ -172,10 +176,6 @@ p {
   font-family: "Anek Devanagari", sans-serif;
   color: #ff8c00;
   line-height: 0.5; /* Ajuste conforme necessário */
-}
-
-#divBusca img {
-  float: left;
 }
 
 /*CONFIGURAÇÃO DO CONTEUDO*/
