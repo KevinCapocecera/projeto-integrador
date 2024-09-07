@@ -21,11 +21,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  font-size: 55px;
-}
-
 main {
   /* Definir largura e exibir como flexbox */
   display: flex;
@@ -35,6 +30,11 @@ main {
 
   width: 100%;
   gap: 25px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 480, "GRAD" 0, "opsz" 65;
+  font-size: 45px !important; /* O !important força o tamanho do ícone (tnc essa desgraça deu trabalho pra alinhar */
 }
 
 header {
@@ -49,11 +49,6 @@ header {
   background-position: center;
   background-size: 100%;
   padding-top: 70px;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  font-size: 65px;
 }
 
 /* Botão de dropdown */
@@ -129,9 +124,13 @@ nav {
 
 /*CONFIGURAÇÃO DA BARRA DE BUSCA*/
 #divBusca {
+  display: flex;
   position: absolute;
-  right: 0;
+  align-items: center;
+  right: 0.1%;
+  top: 25%;
   margin: 20px;
+  margin-left: 5%;
   background-color: #ffffff;
   border: solid 2px #ff8c00;
   border-radius: 10px;
@@ -166,11 +165,13 @@ h3 {
   font-weight: 400;
   font-style: normal;
   min-height: 72px;
+  text-align: center;
 }
 
 p {
   font-family: "Anek Devanagari", sans-serif;
   color: #ff8c00;
+  line-height: 0.5; /* Ajuste conforme necessário */
 }
 
 #divBusca img {
