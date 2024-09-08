@@ -24,8 +24,18 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
+    <!--ALERTA-->
+    <script>
+      function exibirAlerta() {
+        alert(
+          "Site prototipo para estudo do Técnico em informática para Internet do Senac-Araraquara, tudo contendo nele é meramente para estudos!."
+        );
+      }
+
+      window.onload = exibirAlerta;
+    </script>
+
     <main>
       <header>
         <!--NAV CONTENDO O LOGIN, MENU E A BARRA DE PESQUISAR -->
@@ -68,8 +78,9 @@
           <div class="product-item">
             <a href="bone-mclaren.html">
               <img src="Images/bone.png" alt="Boné McLaren Team" />
-              <h3>Boné McLaren Team</h3>
-              <p>R$130,00</p>
+              <h3>
+                Boné McLaren Team<br /><span class="price">R$130,00</span>
+              </h3>
             </a>
           </div>
 
@@ -79,8 +90,9 @@
                 src="Images/moletom-laranja.png"
                 alt="Moletom Laranja McLaren Team"
               />
-              <h3>Moletom McLaren Team (Logo)</h3>
-              <p>R$350,00</p>
+              <h3>
+                Moletom McLaren Team<br /><span class="price">R$350,00</span>
+              </h3>
             </a>
           </div>
 
@@ -90,8 +102,11 @@
                 src="Images/camise-laranja.png"
                 alt="Camiseta Laranja McLaren Team"
               />
-              <h3>Camiseta McLaren Team Laranja</h3>
-              <p>R$180,00</p>
+              <h3>
+                Camiseta McLaren Team Laranja<br /><span class="price"
+                  >R$180,00</span
+                >
+              </h3>
             </a>
           </div>
 
@@ -101,8 +116,11 @@
                 src="Images/camiseta-branca.png"
                 alt="Camiseta Branca McLaren Team"
               />
-              <h3>Camiseta McLaren Team Branca</h3>
-              <p>R$170,00</p>
+              <h3>
+                Camiseta McLaren Team Branca<br /><span class="price"
+                  >R$170,00</span
+                >
+              </h3>
             </a>
           </div>
 
@@ -112,32 +130,30 @@
                 src="Images/moletom02.png"
                 alt="Moletom Laranja McLaren Team"
               />
-              <h3>Moletom McLaren Team</h3>
-              <p>R$350,00</p>
+              <h3>
+                Moletom McLaren Team<br /><span class="price">R$350,00</span>
+              </h3>
             </a>
           </div>
 
           <div class="product-item">
             <a href="jaqueta.html">
               <img src="Images/jaqueta.png" alt="Jaqueta McLaren Team" />
-              <h3>Jaqueta McLaren Team</h3>
-              <p>R$650,00</p>
+              <h3>Jaqueta McLaren<br /><span class="price">R$650,00</span></h3>
             </a>
           </div>
 
           <div class="product-item">
             <a href="touca.html">
               <img src="Images/touca.png" alt="Touca McLaren Team" />
-              <h3>Touca McLaren Team</h3>
-              <p>R$80,00</p>
+              <h3>Touca McLaren<br /><span class="price">R$80,00</span></h3>
             </a>
           </div>
 
           <div class="product-item">
             <a href="gorro.html">
               <img src="Images/gorro.png" alt="Gorro McLaren Team" />
-              <h3>Gorro McLaren Team</h3>
-              <p>R$70,00</p>
+              <h3>Gorro McLaren<br /><span class="price">R$70,00</span></h3>
             </a>
           </div>
         </div>
@@ -154,6 +170,9 @@
             />
           </a>
         </div>
+        <h5>
+          <i>❌ Este site é um prototipo para estudos.</i>
+        </h5>
       </footer>
     </main>
   </body>
