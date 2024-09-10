@@ -1,2 +1,1 @@
-testando o git
-testando denovo
+Site prototipo para estudo do Técnico em informática para Internet do Senac-Araraquara, tudo contendo nele é meramente para estudos!

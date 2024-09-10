@@ -61,9 +61,8 @@
 
   footer {
     display: flex;
-    height: 60px;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
+    padding: 15px 0px;
     background-color: #f99a00;
   }
 
@@ -78,6 +77,20 @@
     margin-top: -1%;
     display: flex;
     right: -1%;
+    background-color: #ffffff;
+    border: solid 2px #ff8c00;
+    border-radius: 10px;
+    width: 300px;
+    height: 32px;
+  }
+  #divBusca {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: -4%;
+    top: 21%;
+    margin: 20px;
+    margin-left: 5%;
     background-color: #ffffff;
     border: solid 2px #ff8c00;
     border-radius: 10px;
@@ -107,25 +120,27 @@
     font-size: medium;
   }
 }
+
 .voltar {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
   margin: 0;
+  position: relative;
+  right: 45% !important;
+  top: 0;
 }
 
 .voltar img {
   display: block;
   width: 30px;
   height: auto;
+  transition: box-shadow 0.3s, border-radius 0.3s;
 }
 
-.logo {
-  display: flex;
-  width: 150px;
-  height: 50px;
-  margin-left: 10px;
-  opacity: 0.8;
-  text-align: center;
+.voltar:hover img {
+  background-color: #f99a00;
+  box-shadow: 0 0 0 3px orange;
+  border-radius: 50%;
 }

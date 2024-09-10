@@ -1,70 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="McLaren Outlet: Exclusividade e desempenho ao seu alcance."
+    />
+    <!-- Link do Bootstrap 5 -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Moletom Team</title>
+    <link rel="stylesheet" href="Styles CSS/mobile-product.css" />
+    <link rel="stylesheet" href="Styles CSS/desktop-product.css" />
+    <link rel="stylesheet" href="Styles CSS/mobile.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="Styles CSS/mobile product.css" />
-  <link rel="stylesheet" href="Styles CSS/desktop product.css" />
-  <script src="Script JS/script.js"></script>
-  <link rel="icon" href="Images/mclaren-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-  <title>Moletom Mclaren Team (Laranja)</title>
-</head>
+    <script src="Script JS/script.js" defer></script>
+    <link rel="icon" href="Images/mclaren-icon.png" />
+  </head>
 
-<body>
-  <main>
-    <header>
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="index.html">Home</a>
-          <a href="https://cars.mclaren.com/br-pt" target="_blank">Cars</a>
-          <a href="https://racingcareers.mclaren.com/" target="_blank">Careers</a>
-        </div>
-      </div>
-      <div>
-        <a href="https://www.mclaren.com/racing/" target="_blank"><img src="Images/mclaren-logo.png" alt="Mclaren Logo"
-            class="logo" /></a>
-      </div>
-    </header>
-    <section>
-      <div class="container">
-        <button class="voltar" onclick="window.history.back()">
-          <img src="Images/arrow.png" alt="Voltar" class="back-icon" />
-        </button>
-        <div class="produto">
-          <img src="Images/moletom02.png" alt="moletom-laranja2" id="moletom-laranja2-img" />
-          <div class="descricao">
-            <p id="descricao">
-              Moletom McLaren Team <br />
-              R$350,00
-            </p>
+  <body>
+    <main>
+      <header></header>
+        <!--NAV CONTENDO O LOGIN, MENU E A BARRA DE PESQUISAR -->
+        <nav>
+          <div id="login">
+            <a href="login-McLaren/login.html">
+              <img src="Images/login.png" alt="Imagem de Login" />
+            </a>
+          </div>
 
-            <div class="qtd">
-              <label for="produto-quantidade">Quantidade: </label>
-              <input type="number" min="1" id="produto-quantidade" value="1" />
-              <br />
-            </div>
-            <div class="botoes">
-              <a href="carrinho.html">
-                <button onclick="adicionarProduto()" class="add-cart">
-                  Adicionar ao carrinho
-                </button>
-              </a>
+          <div class="dropdown">
+            <button
+              onclick="myFunction()"
+              class="dropbtn material-symbols-outlined"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="login-McLaren/login.html" target="_blank"
+                ><img src="Images/user.png" alt="img login" /> Login</a
+              >
+              <a href="carrinho.html" target="_blank"
+                ><img src="Images/carrinho.png" alt="img carrinho" />
+                Carrinho</a
+              >
+              <a href="sobre-empresa-McLaren/sobre-McLaren.html" target="_blank"
+                ><img src="Images/group.png" alt="img sobre-nos" /> Sobre nós</a
+              >
             </div>
           </div>
+
+          <div id="divBusca">
+            <img src="Images/lupa.png" alt="Ícone de busca" />
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <button id="btnBusca">Buscar</button>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <!--ANUNCIO Moletom 2 -->
+        <div class="container">
+          <button class="voltar" onclick="window.location.href='index.html';">
+            <img src="Images/arrow.png" alt="Voltar" />
+          </button>
+
+          <div class="product-item" data-preco="350.00">
+            <a href="moletom-laranja2.html">
+              <img src="Images/moletom02.png" alt="Moletom McLaren" />
+              <h3>
+                Moletom McLaren Team<br><span class="price">R$350,00</span>
+              </h3>
+            </a>
+            <label class="qtd" for="produto-quantidade">Quantidade: </label>
+            <input
+              type="number"
+              min="1"             
+              id="produto-quantidade"
+              value="1"
+            />
+            <button onclick="adicionarProduto()" class="add-cart">
+              Adicionar ao carrinho
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <div class="footer">
-        <a href="https://www.mclaren.com/racing/" target="_blank"><img src="Images/mclaren-logo.png" alt="Mclaren Logo"
-            class="logo" /></a>
-      </div>
-    </footer>
-  </main>
-</body>
-
+      <footer>
+        <!--RODAPÉ CONTENDO A LOGO DA MCLAREN-->
+        <div class="footer">
+          <a href="https://www.mclaren.com/racing/" target="_blank">
+            <img
+              src="Images/mclaren-logo.png"
+              alt="Logo McLaren"
+              class="logo"
+            />
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
