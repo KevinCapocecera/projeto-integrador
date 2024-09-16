@@ -12,6 +12,7 @@
     width: 100%;
   }
 
+  /*FONTE DO MENU*/
   .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 480, "GRAD" 0, "opsz" 65;
     font-size: 65px;
@@ -25,6 +26,7 @@
     margin: 0 auto;
   }
 
+  /*CONFIGURAÇÃO DO CONTAINER. O QUE FAZ A ORGANIZAÇÃO DOS ANUNCIOS*/
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -39,6 +41,8 @@
     align-items: center;
   }
 
+
+  /*CONFIGURAÇÃO DOS ANUNCIOS*/
   .product-item {
     text-align: center;
     background-color: white;
@@ -59,18 +63,6 @@
     margin: 0 auto;
   }
 
-  footer {
-    display: flex;
-    height: 60px;
-    justify-content: center;
-    padding: 0px 0px 0px 0px;
-    background-color: #f99a00;
-  }
-
-  .footer .logo {
-    width: 150px;
-    height: auto;
-  }
 
   /*CONFIGURAÇÃO DA BARRA DE BUSCA*/
   #divBusca {
@@ -107,6 +99,8 @@
     font-size: medium;
   }
 }
+
+/*CONFIGURAÇÃO DO BOTÃO VOLTAR DO ANUNCIO*/
 .voltar {
   background: none;
   border: none;
@@ -121,6 +115,7 @@
   height: auto;
 }
 
+/*CONFIGURAÇÕES DO LOGO MCLAREN*/
 .logo {
   display: flex;
   width: 150px;
@@ -128,4 +123,18 @@
   margin-left: 10px;
   opacity: 0.8;
   text-align: center;
+}
+
+/*CONFIGURAÇÕES RODAPÉ*/
+footer {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  background-color: #f99a00;
+}
+
+.footer .logo {
+  width: 150px;
+  height: auto;
 }
