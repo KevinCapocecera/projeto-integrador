@@ -138,6 +138,46 @@ nav {
   border-radius: 10px;
   width: 300px;
   height: 32px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#divBusca:hover {
+  background-color: #fff5e5;
+  border-color: #e07b00;
+}
+
+#txtBusca {
+  float: left;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 195px;
+}
+
+#btnBusca {
+  border: none;
+  float: left;
+  height: 32px;
+  border-radius: 0 7px 7px 0;
+  width: 72px;
+  font-weight: bold;
+  background: #ff8c00;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: medium;
+  cursor: pointer;
+}
+
+#btnBusca:hover {
+  background: #e07b00;
+  color: #fff;
+}
+
+
+#btnBusca:hover {
+  background: #e07b00; /* Cor mais escura para o efeito de hover */
+  color: #fff; /* Manter o texto branco */
 }
 
 /*CONFIGURAÇÕES DA BARRA DE BUSCA*/

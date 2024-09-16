@@ -76,7 +76,7 @@
     width: 300px;
     height: 32px;
   }
-
+  
   #txtBusca {
     float: left;
     padding-left: 5px;
@@ -85,7 +85,7 @@
     height: 32px;
     width: 195px;
   }
-
+  
   #btnBusca {
     border: none;
     float: left;
@@ -97,8 +97,14 @@
     color: #ffffff;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: medium;
+    cursor: pointer;
   }
-}
+  
+  #btnBusca:hover {
+    background: #e07b00;
+    color: #fff;
+  }
+  
 
 /*CONFIGURAÇÃO DO BOTÃO VOLTAR DO ANUNCIO*/
 .voltar {
