@@ -212,13 +212,13 @@ a {
   color: black;
 
   color: #f99a00;
- 
+
 }
 
 a::after {
   text-decoration: none;
   color: black;
- 
+
 }
 
 footer {
@@ -269,7 +269,6 @@ footer {
 .add-cart {
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
   width: 200px;
   height: 50px;
   text-align: center;
@@ -283,6 +282,7 @@ footer {
 
 .add-cart:hover {
   background: linear-gradient(45deg, #ffb347, #ffcc33);
+  cursor: pointer;
 }
 
 .produto {
@@ -338,9 +338,26 @@ footer {
   text-align: center;
   background-color: #f9f9f9;
 }
+
+.botao a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+  
+
+}
 .botao{
-  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  
 }
-.content{
-  min-height: 500px;
+
+.content {
+  min-height: 300px;
 }
+

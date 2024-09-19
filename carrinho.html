@@ -15,18 +15,31 @@
 <body>
   <main>
     <header>
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="index.html">Home</a>
-          <a href="https://cars.mclaren.com/br-pt" target="_blank">Cars</a>
-          <a href="https://racingcareers.mclaren.com/" target="_blank">Careers</a>
+      <nav>
+      <!--MENU-->
+        <div class="dropdown">
+          <button
+            onclick="myFunction()"
+            class="dropbtn material-symbols-outlined"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="login-McLaren/login.html" target="_blank"
+              ><img src="Images/user.png" alt="img login" /> Login</a
+            >
+            <a href="carrinho.html" target="_blank"
+              ><img src="Images/carrinho.png" alt="img carrinho" />
+              Carrinho</a
+            >
+            <a href="sobre-empresa-McLaren/sobre-McLaren.html" target="_blank"
+              ><img src="Images/group.png" alt="img sobre-nos" /> Sobre nós</a
+            >
+          </div>
         </div>
-      </div>
-      <div>
-        <a href="https://www.mclaren.com/racing/" target="_blank"><img src="Images/mclaren-logo.png" alt="Mclaren Logo"
-            class="logo" /></a>
-      </div>
+
     </header>
     <section>
       <div class="container">
@@ -39,7 +52,6 @@
           <button onclick="remover()" class="add-cart">Remover do carrinho</button>
           <a href="index.html"><button class="add-cart">Voltar ao site</button></a>
         </div>
-
         <label for="preco">
           <ol id="preco"></ol>
         </label>

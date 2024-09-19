@@ -144,3 +144,12 @@
   box-shadow: 0 0 0 3px orange;
   border-radius: 50%;
 }
+.content {
+  min-height: 500px;
+}
+.botao a {
+  display: none;
+  
+  
+
+}
