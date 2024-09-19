@@ -2,31 +2,61 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Styles CSS/desktop-product.css" />
+  <link rel="stylesheet" href="Styles CSS/mobile-product.css" />
   <script src="Script JS/script.js"></script>
-  <link rel="icon" href="Images/mclaren-icon.png">
-  <title>Meu carrinho</title>
+  <link rel="icon" href="Images/mclaren-icon.png" />
+
+  <title>carrinho</title>
 </head>
 
 <body>
+  <main>
+    <header>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="https://cars.mclaren.com/br-pt" target="_blank">Cars</a>
+          <a href="https://racingcareers.mclaren.com/" target="_blank">Careers</a>
+        </div>
+      </div>
+      <div>
+        <a href="https://www.mclaren.com/racing/" target="_blank"><img src="Images/mclaren-logo.png" alt="Mclaren Logo"
+            class="logo" /></a>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h1>Carrinho de Compras</h1>
 
-  <section>
-    <h1>Carrinho de Compras</h1>
-    <a href="index.html"><button>Voltar ao site</button></a>
-    <button onclick="remover()" class="add-cart">Remover do carrinho</button>
+        <label for="lista-carrinho" class="content">
+          <ol id="lista-carrinho" class="list"></ol>
+        </label>
+        <div class="botao">
+          <button onclick="remover()" class="add-cart">Remover do carrinho</button>
+          <a href="index.html"><button class="add-cart">Voltar ao site</button></a>
+        </div>
 
-    <label for="lista-carrinho" class="content">
-      <ol id="lista-carrinho" class="list"></ol>
-    </label>
-    <label for="preco">
-      <ol id="preco"></ol>
-    </label>
-    <label for="preco-total"></label>
-    <script>
-      carregarCarrinho();
-    </script>
+        <label for="preco">
+          <ol id="preco"></ol>
+        </label>
+        <label for="preco-total"></label>
+        <script>
+          carregarCarrinho();
+        </script>
+      </div>
+    </section>
 
+    <footer>
+      <div class="footer">
+        <a href="https://www.mclaren.com/racing/" target="_blank"><img src="Images/mclaren-logo.png" alt="Mclaren Logo"
+            class="logo" /></a>
+      </div>
+    </footer>
+  </main>
 </body>
 
 </html>

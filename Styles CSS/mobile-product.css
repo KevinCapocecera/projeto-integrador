@@ -7,7 +7,7 @@
 body {
   /* Exibir corpo como flexbox */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   background-color: #fffbfb;
@@ -127,14 +127,20 @@ section {
   /* Exibir conteúdo do dropdown */
   display: block;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  max-width: 900px;
   background-color: #bebebe;
   border-radius: 15px;
   color: black;
+  flex-direction: column;
+  padding: 20px;
+
+  position: relative;
+  top: 20px;
 }
 
 .bone {
@@ -200,23 +206,31 @@ p {
 
   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
 }
+
 a {
   text-decoration: none;
   color: black;
+
+  color: #f99a00;
+ 
 }
+
 a::after {
   text-decoration: none;
   color: black;
+ 
 }
+
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 229px;
 
   background-color: #f99a00;
   width: 100%;
 }
+
 .qtd p {
   display: flex;
   align-items: center;
@@ -228,6 +242,7 @@ footer {
 
   background-color: transparent;
 }
+
 #produto-quantidade {
   width: 100px;
   height: 25px;
@@ -237,6 +252,7 @@ footer {
 
   background-color: #ffffff;
 }
+
 .descricao {
   display: flex;
   align-items: center;
@@ -249,8 +265,8 @@ footer {
   width: 100%;
   height: 100%;
 }
+
 .add-cart {
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5%;
@@ -268,6 +284,7 @@ footer {
 .add-cart:hover {
   background: linear-gradient(45deg, #ffb347, #ffcc33);
 }
+
 .produto {
   display: flex;
   align-items: center;
@@ -278,6 +295,7 @@ footer {
   height: 100%;
   border-radius: 15px;
 }
+
 /* CONFIGURAÇÃO DOS BOTÕES VOLTAR */
 .back-icon {
   width: 45px;
@@ -290,6 +308,8 @@ footer {
   cursor: pointer;
   padding: 0;
   margin: 0;
+  align-items: center;
+  height: 50px;
 }
 
 .voltar img {
@@ -317,4 +337,10 @@ footer {
   border-radius: 10px;
   text-align: center;
   background-color: #f9f9f9;
+}
+.botao{
+  height: 50px;
+}
+.content{
+  min-height: 500px;
 }
